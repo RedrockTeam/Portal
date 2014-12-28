@@ -1,0 +1,96 @@
+		*{
+			padding: 0;
+			margin: 0;
+			font-family: "微软雅黑";
+		}
+		body{
+			height: 97%;
+		}
+		.edit{
+			min-height: 450px;
+			width: 550px;
+			margin: 10px 200px 40px 200px;
+			float: left;
+			background: #e6e7e9;
+		}
+		.edit p{
+			margin:20px 50px;
+			text-align: center;
+		}
+		.edit p label{
+			font-size: 16px;
+			margin-right: 10px;
+		}
+		.edit p input{
+			height: 23px;
+			border-radius: 3px;
+		}
+		.edit p span{
+			color: red;
+		}
+		.execbtn{
+			float: right;
+			margin: 0 20px 0 0;
+			font-size: 15px;
+			line-height:15px;
+			height: 35px;
+			width: 60px;
+			color: #fff;
+			border-radius:2px;
+			border-left:0px;
+			border-top:0px;
+			border-right:0px;
+			border-bottom:1px;
+			border-radius: 5px;
+			cursor:pointer;
+			background:rgb(255,68,68);
+		}
+
+
+		#list{
+			min-width: 910px;
+			margin: 10px 20px 40px 20px;
+		}
+
+		#list table{
+			border-spacing: 0;
+		}
+		
+		
+		#list tr:first-child th:first-child{
+			border-top-left-radius: 5px;
+		}
+
+		#list tr:first-child th:last-child{
+			border-top-right-radius: 5px;
+		}
+	
+		#list tr th{
+			padding: 10px 10px;
+			text-align: center;
+		}
+		#list tr td{
+			padding: 10px 10px;
+			text-align: center;
+		}
+
+		#list tr:nth-child(odd){
+			background: rgb(230,231,233);
+		}
+
+		#list tr:nth-child(even){
+			background: rgb(210,214,217);
+		}
+
+		#list tr:nth-child(1){
+			background: rgb(67,67,67);
+		}
+
+		#list tr:last-child td:first-child{
+			border-bottom-left-radius: 5px;
+		}
+
+		#list tr:last-child td:last-child{
+			border-bottom-right-radius: 5px;
+		}
+

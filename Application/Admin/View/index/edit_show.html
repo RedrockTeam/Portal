@@ -1,0 +1,158 @@
+
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>更改信息</title>
+	 <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/bootstrap-responsive.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/style.css" />
+	<link rel="stylesheet" href="__PUBLIC__/admin/css/clear.css">
+	<link rel="stylesheet" href="__PUBLIC__/admin/css/adminIndex.css">
+	<link rel="stylesheet" href="__PUBLIC__/admin/css/edit.css">
+	<script src="javascript/jquery-1.8.3.min.js"></script>
+	
+	<style type="text/css">
+        body {
+            padding-bottom: 40px;
+        }
+        .sidebar-nav {
+            padding: 9px 0;
+        }
+
+        @media (max-width: 980px) {
+            /* Enable use of floated navbar text */
+            .navbar-text.pull-right {
+                float: none;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }
+    </style>
+</head>
+<body id="sysmain">
+	<div class="content">
+		<div class="syshead">
+			<div class="clearfix">
+				<p class="left">
+					<img alt="红岩网校门户后台" title="红岩网校门户后台" src="__PUBLIC__/admin/images/logo.gif">
+				</p>
+				<p class="right">
+					<a href="javascript:void(0);">王洋辉</a>
+					<a class="outsys" title="退出系统" href="__MODULE__/Login/logout">
+						<img src="__PUBLIC__/admin/images/outsys.gif" width="16" height="16">退出
+					</a>
+				</p>
+			</div>
+		</div>
+		<div class="sysmain clearfix">
+			<div class="sysmenua">
+				<ul>
+					<li><a href="javascript:void(0);">后台首页</a></li>
+					<li><a href="__MODULE__/Finder/joblist">兼职信息</a></li>
+					<li><a href="__MODULE__/Study/lecturelist">讲座信息</a></li>
+					<li><a href="javascript:void(0);">下载资源</a></li>
+					<li><a <if condition="$table eq 'hot_activity'">class="current"</if> href="__CONTROLLER__/index/to/hot_activity">热门活动</a></li>
+					<li><a <if condition="$table eq 'club_activity'">class="current"</if> href="__CONTROLLER__/index/to/club_activity">社团活动</a></li>
+					<li><a href="__CONTROLLER__/upload_redrock_img">首页轮播</a></li>
+					<li><a <if condition="$table eq 'match_imformation'">class="current"</if> href="__CONTROLLER__/index/to/match_imformation">比赛信息</a></li>
+					<li><a <if condition="$table eq 'creative_platform'">class="current"</if> href="__CONTROLLER__/index/to/creative_platform">原创平台</a></li>
+				</ul>
+			</div>
+			<div class="sysmenub">
+				<p class="smenubtit">
+					<?php
+						switch($table){
+							case "match_imformation":
+								echo '比赛信息';
+								break;
+							case "hot_activity":
+								echo '热门活动';
+								break;
+							case "club_activity":
+								echo '社团活动';
+								break;
+							case 'creative_platform':
+								echo "原创平台";
+								break;
+						}
+					?>
+				</p>
+				<ul>
+					<li><a href="<?php echo U("common/index?to=".$table); ?>">查看全部</a></li>
+					<li><a class="current" href="javascript:void(0);">添加信息</a></li>
+				</ul>
+			</div>
+			<div class="sysinfo">
+				<p class="sinfotit">更改信息</p>
+				<form action="{$url}" method="post" class="definewidth m20" enctype="multipart/form-data" >
+<input type="hidden" name="id" value="" />
+<table class="table table-bordered table-hover ">
+	<tr>
+        <td width="10%" class="tableleft">当前位置：</td>
+        <td><input type="text" name="table" value="{$table}" style="display:none;"/><span style="font-weight:bold;font-size:20px;color:blue;margin-left:50px;">{$table}</span></td>
+    </tr>
+    <tr>
+        <td width="10%" class="tableleft">id编号：</td>
+        <td><input type="text" name="id" value="{$data.id}" style="display:none;"/><span style="font-weight:bold;font-size:20px;color:green;margin-left:90px;"><php>if($data['id']!= ''){echo $data['id'];}else{echo '新增';}</php></span></td>
+    </tr>
+
+	 <tr>
+        <td class="tableleft">文件：</td>
+        <td ><input type="file" name="photo" /></td>
+    </tr>  
+	<tr>
+        <td class="tableleft">名称：</td>
+        <td ><input type="text" name="title" value="{$data['title']}" required="true"/></td>
+    </tr>  
+	 <tr>
+        <td class="tableleft">发布者：</td>
+        <td ><input type="text" name="by" value="{$data['by']}" required="true"/></td>
+    </tr>  
+	<tr>
+        <td class="tableleft">链接地址：</td>
+        <td ><input type="text" name="url" value="{$data['url']}" required="true"/></td>
+    </tr>  
+	<tr>
+        <td class="tableleft">简介：</td>
+        <td >
+        	<textarea id="editor_id" name="introduce" style="width:700px;height:150px;">{$data['introduce']}</textarea>
+		</td>
+    </tr>  
+	<tr>
+		<PHP>
+			if($table=="creative_platform"){
+		</php>
+			<td class="tableleft">类型：</td>
+			<td>
+				<select name="detil">
+					<option value = "photo">微相册</option>
+					<option value = "fiction">微小说</option>
+					<option value = "moving">微电影</option>
+				</select>
+			</td>
+		<php>
+			}else{
+		</PHP>
+        
+		<php>}</php>
+    </tr>  
+	
+
+    <tr>
+        <td class="tableleft"></td>
+        <td>
+            <button type="submit" class="btn btn-primary" type="button">保存</button> &nbsp;&nbsp;<button type="button" class="btn btn-success" name="backid" id="backid">返回列表</button>
+        </td>
+    </tr>
+</table>
+</form>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>
+

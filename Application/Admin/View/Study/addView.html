@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>添加兼职信息</title>
+	<link rel="stylesheet" href="__PUBLIC__/admin/css/clear.css">
+	<link rel="stylesheet" href="__PUBLIC__/admin/css/adminIndex.css">
+	<link rel="stylesheet" href="__PUBLIC__/admin/css/edit.css">
+	<script src="javascript/jquery-1.8.3.min.js"></script>
+</head>
+<body id="sysmain">
+	<div class="content">
+		<div class="syshead">
+			<div class="clearfix">
+				<p class="left">
+					<img alt="红岩网校门户后台" title="红岩网校门户后台" src="__PUBLIC__/admin/images/logo.gif">
+				</p>
+				<p class="right">
+				<if condition="$Think.session.login_name">
+					<a href="javascript:void(0);">王洋辉</a>
+					<a class="outsys" title="退出系统" href="__MODULE__/Login/logout">
+						<img src="__PUBLIC__/admin/images/outsys.gif" width="16" height="16">退出
+					</a>
+				</if>
+				</p>
+			</div>
+		</div>
+		<div class="sysmain clearfix">
+			<div class="sysmenua">
+				<ul>
+					<li><a href="javascript:void(0);">后台首页</a></li>
+					<li><a href="__MODULE__/Finder/joblist">兼职信息</a></li>
+					<li><a class="current" href="javascript:void(0);">讲座信息</a></li>
+					<li><a href="javascript:void(0);">下载资源</a></li>
+					<li><a href="__MODULE__/common/index/to/hot_activity">热门活动</a></li>
+					<li><a href="__MODULE__/common/index/to/club_activity">社团活动</a></li>
+					<li><a href="__MODULE__/common/upload_redrock_img">首页轮播</a></li>
+					<li><a href="__MODULE__/common/index/to/match_imformation">比赛信息</a></li>
+					<li><a href="__MODULE__/common/index/to/creative_platform">原创平台</a></li>
+				</ul>
+			</div>
+			<div class="sysmenub">
+				<p class="smenubtit">添加信息</p>
+				<ul>
+					<li><a href="__CONTROLLER__/lecturelist">查看全部</a></li>
+					<li><a class="current" href="javascript:void(0);">添加信息</a></li>
+				</ul>
+			</div>
+			<div class="sysinfo">
+				<p class="sinfotit">添加信息</p>
+				<div class="edit">
+					<form action="__CONTROLLER__/lectureEdit" enctype="multipart/form-data" method="post">
+						<p>
+							<label>讲座标题</label>
+							<input type="text" name="l_title">
+							<strong><span>*</span></strong>
+						</p>
+						<p>
+							<label>讲座链接</label>
+							<input type="text" name="l_link">
+							<strong><span>*</span></strong>
+						</p>
+						<p>
+							<label>讲座时间</label>
+							<input type="text" name="l_date">
+							<strong><span>*</span></strong>
+						</p>
+						<p>
+							<label>讲座地点</label>
+							<input type="text" name="l_address" value="{$info.l_address}">
+							<strong><span>*</span></strong>
+						</p>
+						<p>
+							<label>演&nbsp;&nbsp;讲&nbsp;&nbsp;人</label>
+							<input type="text" name="l_teacher">
+							<strong><span>*</span></strong>
+						</p>
+						<p>
+							<label>宣传海报</label>
+							<input type="file" name="l_pic">
+						</p>
+						<p>
+							<label>领票地点</label>
+							<input type="text" name="l_receive_address">
+							<strong><span>*</span></strong>
+						</p>
+						<p>
+							<label>领票时间</label>
+							<input type="text" name="l_receive_date">
+							<strong><span>*</span></strong>
+						</p>
+						<p>
+							<input class="execbtn" type="submit" value="添加">
+						</p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>红岩网校 | 门户网站 | 重邮最大最全的资源门户 | 重庆邮电大学</title>
+    <script type="text/javascript" src="__PUBLIC__/js/lib/html5shiv-printshiv.min.js"></script>
+    <link rel="stylesheet" href="__PUBLIC__/css/global.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/css/function.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/index.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/jquery.slideBox.css">
+</head>
+<body class="f-ff1">
+
+ 
+
+        <!-- 第一栏  start-->
+        <div class="g-m-wrap f-cb">
+            <!-- 聚焦模块 start -->
+            <section class="m-alir g-m-main f-fl">
+					<br/>
+                <h3 align="center"style="font-weight:bold;font-size:50px;margin:0px auto;margin-bottom:50px;">修改主页图片</h3>
+
+                <div class="g-container f-cb">
+                    <!--热点滚动模块 start-->
+					<h3 align="center"style="font-weight:bold;font-size:20px;margin:0px auto;margin-bottom:10px;">热点焦距</h3>
+                    <div class="m-slider-con f-fl">
+					
+                        <div class="u-img-con u-sli-main f-fl slideBox js-sli1">
+                            <ul class="items">
+                                <!--
+                                    ---------------------------------------------------------------
+                                           title:为标题接入点,插件自动生成a标签并将title的内容放入a标签中
+                                    ---------------------------------------------------------------
+                                -->		
+                                <volist name="img_rdjj" id="vo" >
+											<li><a href="{$vo.url}" title="{$vo.title}"><img src="__UPLOAD__/{$vo.img_path}"></a></li>
+									</volist>
+                            </ul>
+                        </div>
+                        <div class="u-img-con  u-sli-minor f-fl">
+                            <div class="u-sli-list2 f-pr slideBox js-sli2">
+                                <ul class="items">
+                                     <volist name="img_rdjj_top" id="vo" >
+											<li><a href="{$vo.url}" title="{$vo.title}"><img src="__UPLOAD__/{$vo.img_path}"></a></li>
+										</volist>
+                                </ul>
+                            </div>
+                            <div class="u-sli-list3 f-pr slideBox js-sli3">
+                                <ul class="items">
+                                     <volist name="img_rdjj_bottom" id="vo" >
+											<li><a href="{$vo.url}" title="{$vo.title}"><img src="__UPLOAD__/{$vo.img_path}"></a></li>
+										</volist>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--热点滚动模块 end-->
+					
+					<div style="font-size:16px;float:right;width:700px;padding-left:20px;">
+						
+						<volist name="img_rdjj" id="vo" >
+						<form action="{$upload_img}" method="post" enctype ="multipart/form-data">
+						<div>大图{$i}:<input value="{$vo.title}" style="width:120px" name="title"/> url:<input value="{$vo.url}"  style="width:120px" name="url"/><input type="file" name="photo"/><input value="{$vo.id}"style="display:none;" name="id"/><input type="submit"/></div>
+						</form>
+						</volist>
+						
+						<br/>
+						<volist name="img_rdjj_top" id="vo" >
+						<form action="{$upload_img}" method="post" enctype ="multipart/form-data">
+						<div>上方小图{$i}:<input value="{$vo.title}" style="width:120px" name="title"/> url:<input value="{$vo.url}"  style="width:120px" name="url"/><input type="file" name="photo"/><input value="{$vo.id}"style="display:none;" name="id"/><input type="submit"/></div>
+						</form>
+						</volist>
+						
+						<br/>
+						<volist name="img_rdjj_bottom" id="vo" >
+						<form action="{$upload_img}" method="post" enctype ="multipart/form-data">
+						<div>下方小图{$i}:<input value="{$vo.title}" style="width:120px" name="title"/> url:<input value="{$vo.url}"  style="width:120px" name="url"/><input type="file" name="photo"/><input value="{$vo.id}"style="display:none;" name="id"/><input type="submit"/></div>
+						</form>
+						</volist>
+					</div>
+                   
+
+                  
+
+                </div>
+            </section>
+            <!-- 聚焦模块 end -->
+
+          
+        </div>
+        <!-- 第一栏  end-->
+
+        <!-- 第二栏  start-->
+        <div class="g-m-wrap f-cb">
+            
+
+            
+        </div>
+        <!-- 第二栏  end-->
+
+        <!-- 第三栏  start-->
+        <div class="g-m-wrap f-cb">
+            <!-- 原创平台模块 start -->
+            <section class="m-origin g-m-main f-fl">
+                
+
+                <div class="g-container f-cb">
+
+                    <!--热点滚动模块 start-->
+                    <div class="m-slider-con f-fl">
+					<br/><br/>
+						<h3 align="center" style="font-weight:bold;font-size:20px;margin:0px auto;margin-bottom:30px;">微相册</h3>
+                        <div class="u-img-con u-sli-main f-fl slideBox js-sli4">
+						
+                            <ul class="items">
+                                <!--
+                                    ---------------------------------------------------------------
+                                           title:为标题接入点,插件自动生成a标签并将title的内容放入a标签中
+                                    ---------------------------------------------------------------
+                                -->
+								<volist name="img_wxc" id="vo" >
+                                <li><a href="{$vo.url}" title="{$vo.title}"><img src="__UPLOAD__/{$vo.img_path}"></a></li>
+								</volist>
+                            </ul>
+                        </div>
+                        <div class="u-img-con  u-sli-minor f-fl">
+                            <div class="u-sli-list2 f-pr slideBox js-sli5">
+                                <ul class="items">
+                                  <volist name="img_wxc_top" id="vo" >
+										<li><a href="{$vo.url}" title="{$vo.title}"><img src="__UPLOAD__/{$vo.img_path}"></a></li>
+									  </volist>
+                                </ul>
+                            </div>
+                            <div class="u-sli-list3 f-pr slideBox js-sli6">
+                                <ul class="items">
+                                    <volist name="img_wxc_bottom" id="vo" >
+											<li><a href="{$vo.url}" title="{$vo.title}"><img src="__UPLOAD__/{$vo.img_path}"></a></li>
+										</volist>
+                                </ul>
+                            </div>
+                        </div>
+						
+						<div style="float:right;width:700px;padding-left:20px;">
+						
+						<volist name="img_wxc" id="vo" >
+						<form action="{$upload_img}" method="post" enctype ="multipart/form-data">
+						<p>大图{$i}:<input value="{$vo.title}" style="width:120px" name="title"/> url:<input value="{$vo.url}"  style="width:120px" name="url"/><input type="file" name="photo"/><input value="{$vo.id}"style="display:none;" name="id"/><input type="submit"/></p>
+						</form>
+						</volist>
+						
+						<br/>
+						<volist name="img_wxc_top" id="vo" >
+						<form action="{$upload_img}" method="post" enctype ="multipart/form-data">
+						<div>上方小图{$i}:<input value="{$vo.title}" style="width:120px" name="title"/> url:<input value="{$vo.url}"  style="width:120px" name="url"/><input type="file" name="photo"/><input value="{$vo.id}"style="display:none;" name="id"/><input type="submit"/></div>
+						</form>
+						</volist>
+						
+						<br/>
+						<volist name="img_wxc_bottom" id="vo" >
+						<form action="{$upload_img}" method="post" enctype ="multipart/form-data">
+						<div>下方小图{$i}:<input value="{$vo.title}" style="width:120px" name="title"/> url:<input value="{$vo.url}"  style="width:120px" name="url"/><input type="file" name="photo"/><input value="{$vo.id}"style="display:none;" name="id"/><input type="submit"/></div>
+						</form>
+						</volist>
+						</div>
+                    </div>
+                    <!--热点滚动模块 end-->
+
+                  
+
+                   
+                </div>
+
+            </section>
+            <!-- 原创平台模块 end -->
+
+          
+        </div>
+        <!-- 第三栏  end-->
+
+        <!-- 第四栏  start-->
+        
+		<br/><br/>
+		<div class="g-m-wrap f-cb">
+		 <section class="m-origin g-m-main f-fl">
+         <div class="m-novels f-fl">
+			
+		 <h3 align="center"style="font-weight:bold;font-size:20px;margin:0px auto;margin-bottom:10px;">微小说</h3>
+                           <div class="g-cover">
+								<volist name="img_fiction" id="vo"  offset="0" length='2'>
+                               <img class="show" src="__UPLOAD__/{$vo.img_path}" alt="" style="width:150px;"/>
+							   </volist>
+                           </div>
+								
+                         
+                       </div>
+		<div style="float:right;width:700px;padding-left:20px;">
+		<br/><br/>
+					<volist name="img_fiction" id="vo" >
+						<form action="{$upload_img}" method="post" enctype ="multipart/form-data">
+						<p>微相册{$i}:<input value="{$vo.title}" style="width:120px" name="title"/> url:<input value="{$vo.url}"  style="width:120px" name="url"/><input type="file" name="photo"/><input value="{$vo.id}"style="display:none;" name="id"/><input type="submit"/></p>
+						</form>
+					</volist>
+					
+		</div>
+		</section>
+		</div>
+        
+</body>
+<script type="text/javascript" src="__PUBLIC__/js/lib/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/lib/jquery.dotdotdot.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/lib/jquery.sliderBox.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/plugin.set.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/script.js"></script>
+
+</html>

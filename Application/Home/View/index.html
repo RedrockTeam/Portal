@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>红岩网校 | 门户网站 | 重邮最大最全的资源门户 | 重庆邮电大学</title>
+    <link rel="stylesheet" href="__PUBLIC__/css/global.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/css/function.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/index.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/zeroling.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/jquery.slideBox.css">
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="__PUBLIC__/js/lib/html5shiv-printshiv.min.js"></script>
+    <![endif]-->
+</head>
+<body class="f-ff1">
+
+    <!--header start-->
+    <header class="g-header">
+        <nav class="m-nav f-cb f-pr">
+
+            <!-- 红岩内部导航区域 start-->
+            <a id="setHome" class="nav-btn f-fl f-fs1 z-crt" href="##">设为首页</a>
+            <a class="nav-btn f-fl f-fs1" href="http://202.202.43.41/market/">二手市场</a>
+            <a class="nav-btn f-fl f-fs1" href="http://202.202.43.42/software/">软件中心</a>
+            <a class="nav-btn f-fl f-fs1" href="http://hongyan.cqupt.edu.cn/t/">红岩微博</a>
+            <a class="nav-btn f-fl f-fs1" href="http://172.22.161.11/">BTdown 铺</a>
+            <a class="nav-btn f-fl f-fs1" href="http://hongyan.cqupt.edu.cn/app/">掌上重邮</a>
+            <!-- <a class="nav-btn more f-fl f-fs1" href="##">…</a> -->
+            <!-- 红岩内部导航区域 end-->
+
+            <!-- 登陆按钮 start-->
+            <ul class="u-login f-fr">
+                <li class="nav-lg f-fl f-fs1" id="show-loginW">登陆</li>
+            </ul>
+            <!-- 登陆按钮 end-->
+
+            <!-- 登陆过后的菜单栏 start
+              -----------------------------------------
+              -- 初始状态为 'display:none', 是绝对定位的--
+              ----------------------------------------
+             -->
+            <div class="m-logined f-pa" id="show-user">
+                <ul class="wel-tip f-fl">
+                    <li class="f-db">您好</li>
+                </ul>
+                <ul class="user-info f-fl">
+                    <li class="user-name f-db">陈晋唯</li>
+                </ul>
+                <ul class="user-query f-fl">
+                    <li class="f-db"><a href="##">信息查询</a></li>
+                    <li><a href="##">查成绩</a></li>
+                    <li><a href="##">查课表</a></li>
+                    <li><a href="##">查空教室</a></li>
+                </ul>
+                <ul class="user-com f-fl">
+                    <li class="f-db"><a href="##">论坛</a></li>
+                    <li><a href="##">评论</a></li>
+                    <li><a href="##">@我</a></li>
+                </ul>
+                <ul class="uer-exit f-fl">
+                    <li class="f-db">登出</li>
+                </ul>
+            </div>
+            <!-- 登陆过后的菜单栏 end  -->
+
+        </nav>
+    </header><!--header end-->
+
+    <!--main-->
+    <main class="g-main">
+        <!-- 头部logo start -->
+        <header class="g-m-header">
+            <h1 class="logo f-fl"></h1>
+            <div class="m-tips f-fl">
+                <ul class="u-info f-fl">
+                    <li class="u-time f-tac f-toe">10月13号星期一</li>
+                    <li><span class="u-place f-tac f-fs1 f-toe">{$weather.wea_min_temp}~{$weather.wea_max_temp}</span><span class="u-weather f-tac f-fs1 f-toe">{$weather.wea_info}</span></li>
+                </ul>
+                <div class="u-weather-logo"></div>
+            </div>
+        </header>
+        <!-- 头部logo end -->
+
+        <!-- 导航模块 start -->
+        <nav class="g-hot-links f-cb">
+            <div class="nav-con f-fl f-pr">
+                <a target="_blank" href="http://hongyan.cqupt.edu.cn/web/" class="f-imp f-toe">网址大全</a>
+                <a target="_blank" href="http://202.202.43.42/jsns/" class="f-toe">锦瑟南山</a>
+                <a target="_blank" href="http://bbs.cqupt.edu.cn/" class="f-toe">幽幽黄桷兰</a>
+                <a target="_blank" href="http://172.22.161.11/" class="f-toe">BT Down</a>
+                <a target="_blank" href="http://202.202.43.42/software/" class="f-toe">软件中心</a>
+                <a target="_blank" href="http://202.202.43.41/market/" class="f-imp f-toe">二手市场</a>
+                <a target="_blank" href="http://hongyan.cqupt.edu.cn/app/" class="f-toe">掌上重邮</a>
+                <a target="_blank" href="http://hongyan.cqupt.edu.cn/welcome/2014/" class="f-toe">新生专题</a>
+            </div>
+            <div class="nav-con f-fl f-pr">
+                <a target="_blank" href="http://jwzx.cqupt.edu.cn/" class="f-imp">教务在线</a>
+                <a target="_blank" href="http://jjc.cqupt.edu.cn/fwdt.php" class="f-imp f-toe">数字后勤</a>
+                <a target="_blank" href="http://202.202.43.22/lgsoft/" class="f-toe">蓝鸽听力</a>
+                <a target="_blank" href="http://202.202.43.36/webCollege/" class="f-toe">文峰英语</a>
+                <a target="_blank" href="http://zwyd.cqupt.edu.cn/" class="f-toe">图书馆订座</a>
+                <a target="_blank" href="http://cq.189.cn/college/home/resource.htm" class="f-toe">NetKeeper</a>
+                <a target="_blank" href="http://vod.cqupt.edu.cn/iptv/" class="f-toe">vod点播</a>
+                <a target="_blank" href="http://xxb.cqupt.edu.cn/" class="f-toe">网管中心</a>
+            </div>
+            <div class="nav-con f-fr f-pr f-no-bor">
+                <a target="_blank" href="http://xwzx.cqupt.edu.cn/" class="f-toe">新闻中心</a>
+                <a target="_blank" href="http://222.177.140.105/index.shtml" class="f-toe">学工管理</a>
+                <a target="_blank" href="http://xsc.cqupt.edu.cn/xsc/" class="f-toe">学生处</a>
+                <a target="_blank" href="http://zjc.cqupt.edu.cn/" class="f-toe">招就处</a>
+                <a target="_blank" href="http://oa.cqupt.edu.cn/" class="f-toe">OA</a>
+                <a target="_blank" href="http://202.202.43.42/gqt/" class="f-toe">团委</a>
+                <a target="_blank" href="http://202.202.43.42/kjcx/" class="f-toe">科联</a>
+                <a target="_blank" href="http://202.202.43.42/stlhh/" class="f-toe">社联</a>
+                
+            </div>
+        </nav>
+        <!-- 导航模块 end -->
+
+        <!-- 第一栏  start-->
+        <div class="g-m-wrap f-cb">
+            <!-- 聚焦模块 start -->
+            <section class="m-alir g-m-main f-fl">
+                <h3 class="u-title"><span>今日热点</span></h3>
+
+                <div class="g-container f-cb">
+                    <!--热点滚动模块 start-->
+                    <div class="m-slider-con f-fl">
+                        <div class="u-img-con u-sli-main f-fl slideBox js-sli1">
+                            <ul class="items">
+                                <volist name="img_rdjj" id="v">
+                                    <li>
+                                        <a href="##" title="{$v.title}">
+                                            <img src="Uploads/{$v.img_path}">
+                                        </a>
+                                    </li>
+                                </volist>  
+                            </ul>
+                        </div>
+                        <div class="u-img-con  u-sli-minor f-fl">
+                            <div class="u-sli-list2 f-pr slideBox js-sli2">
+                                <ul class="items">
+                                    <volist name="img_rdjj_top" id="v">
+                                    <li>
+                                        <a href="##" title="{$v.title}">
+                                            <img src="Uploads/{$v.img_path}">
+                                        </a>
+                                    </li>
+                                </volist>  
+                                </ul>
+                            </div>
+                            <div class="u-sli-list3 f-pr slideBox js-sli3">
+                                <ul class="items">
+                                    <volist name="img_rdjj_bottom" id="v">
+                                    <li>
+                                        <a href="##" title="{$v.title}">
+                                            <img src="Uploads/{$v.img_path}">
+                                        </a>
+                                    </li>
+                                </volist>  
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--热点滚动模块 end-->
+
+                    <!-- 重邮动态模块 start -->
+                    <div class="m-news-con f-fl">
+                        <table>
+                            <volist name="cyxw" id="v">
+                                <tr>
+                                    <td class="new-li f-toe">
+                                        <a href="##">{$v.title}</a>
+                                    </td>
+                                    <td class="new-time f-toe">{$v.time}</td>
+                                </tr>
+                            </volist>
+                        </table>
+                    </div>
+                    <!-- 重邮动态模块 end -->
+
+                    <!-- 教务信息模块 start -->
+                    <div class="m-teach-con f-fl">
+                        <table>
+                            <volist name="jwxx" id="v">
+                                <tr>
+                                    <td class="new-li f-toe">
+                                        <a href="##">{$v.title}</a>
+                                    </td>
+                                    <td class="new-time f-toe">{$v.time}</td>
+                                </tr>
+                            </volist>   
+                        </table>
+                    </div>
+                    <!-- 教务信息模块 end -->
+
+                    <ul class="slider-tabs f-oh f-fl">
+                        <li class="tab-hot"><div class="g-icon-wrap"><span>热点焦距</span></div></li>
+                        <li class="tab-cqupt-news"><div class="g-icon-wrap"><span>重邮动态</span></div></li>
+                        <li class="tab-teach-news"><div class="g-icon-wrap"><span>教务信息</span></div></li>
+                        <li class="z-cover"></li>
+                    </ul>
+                </div>
+            </section>
+            <!-- 聚焦模块 end -->
+
+            <!-- 热门模块 start -->
+            <section class="m-hot g-m-minor f-fr">
+                <h3 class="u-title"><span>热门活动</span><a class="u-t-more f-fs1" href="##">更多</a></h3>
+
+                <ul class="u-as-typeo">
+                    <volist name="hotActivity" id="v" key="k">
+                        <li class="f-cb <if condition="$k == 1">f-no-pt</if>">
+                            <div class="show">
+                                <img src="Uploads/{$v.path}">
+                            </div>
+                            <h5 class="m-hot-t f-fs2 f-toe">{$v.title}</h5>
+                            <a href="##" class="m-hot-c f-fs1 js-oes f-toe">{$v.introduce}</a>
+                        </li>
+                    </volist>
+                </ul>
+            </section>
+            <!-- 热门模块 end -->
+        </div>
+        <!-- 第一栏  end-->
+
+        <!-- 第二栏  start-->
+        <div class="g-m-wrap f-cb">
+             <!--论坛模块 start-->
+            <section class="m-forum g-m-main f-fl">
+                <h3 class="u-title"><span>校园论坛</span><a class="u-t-more f-fs1" href="##">更多</a></h3>
+
+                <!-- 热门帖子模块 start -->
+               <ul class="m-invas m-lists f-pr f-cb">
+                    <volist name="bbs_lt" id="v">
+                        <li class="f-toe"><a class="f-fs2" href="{$v.tid}">{$v.subject}</a></li>
+                    </volist>
+                </ul>
+                <!-- 热门帖子模块 end -->
+            </section>
+             <!--论坛模块 end-->
+
+             <!--你问我答模块 start-->
+            <section class="m-ques-res g-m-minor f-fr">
+                <h3 class="u-title"><span>你问我答</span><a class="u-t-more f-fs1" href="##">更多</a></h3>
+
+                <!-- 热门问题 start -->
+                <ul class="m-question m-lists f-pr f-cb">
+                    <volist name="wd" id="v">
+                        <li class="f-toe">
+                            <a class="f-fs2" href="{$v.tid}">{$v.subject}</a>
+                        </li>
+                    </volist>
+                </ul>
+                <!-- 热门问题 end -->
+            </section>
+             <!--你问我答模块 end-->
+        </div>
+        <!-- 第二栏  end-->
+
+        <!-- 第三栏  start-->
+        <div class="g-m-wrap f-cb">
+            <!-- 原创平台模块 start -->
+            <section class="m-origin g-m-main f-fl">
+                <h3 class="u-title"><span>原创平台</span></h3>
+
+                <div class="g-container f-cb">
+
+                    <!--热点滚动模块 start-->
+                    <div class="m-slider-con f-fl">
+                        <div class="u-img-con u-sli-main f-fl slideBox js-sli4">
+                            <ul class="items">
+                               <volist name="img_wxc" id="v">
+                                    <li>
+                                        <a href="##" title="{$v.title}">
+                                            <img src="Uploads/{$v.img_path}">
+                                        </a>
+                                    </li>
+                                </volist>
+                            </ul>
+                        </div>
+                        <div class="u-img-con  u-sli-minor f-fl">
+                            <div class="u-sli-list2 f-pr slideBox js-sli5">
+                                <ul class="items">
+                                    <volist name="img_wxc_top" id="v">
+                                        <li>
+                                            <a href="##" title="{$v.title}">
+                                                <img src="Uploads/{$v.img_path}">
+                                            </a>
+                                        </li>
+                                    </volist>
+                                </ul>
+                            </div>
+                            <div class="u-sli-list3 f-pr slideBox js-sli6">
+                                <ul class="items">
+                                    <volist name="img_wxc_bottom" id="v">
+                                        <li>
+                                            <a href="##" title="{$v.title}">
+                                                <img src="Uploads/{$v.img_path}">
+                                            </a>
+                                        </li>
+                                    </volist>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--热点滚动模块 end-->
+
+                    <!-- 微小说模块 start -->
+                       <div class="m-novels f-fl">
+                           <div class="g-cover">
+                               <img class="show" src="__PUBLIC__/images/content/9.jpg" alt=""/><img class="show" src="__PUBLIC__/images/content/9.jpg" alt=""/>
+                           </div>
+
+                           <div class="u-lists f-cb">
+                               <div class="l-li f-fl">
+                                   <p class="name fir f-toe f-fs2"><a href="##">书桓走的第一天，想他</a></p>
+
+                                   <p class="content sec f-toe f-fs1"><a href="##">因为长时间诠释何书桓角色的缘故，古巨基练就了</a></p>
+
+                                   <p class="content thir f-toe f-fs1"><a href="##">情绪收放自如的功夫，没想到演...</a></p>
+                               </div>
+                               <div class="l-li f-fl f-no-mr">
+                                   <p class="name fir f-toe f-fs2"><a href="##">书桓走的第一天，想他</a></p>
+
+                                   <p class="content sec f-toe f-fs1"><a href="##">因为长时间诠释何书桓角色的缘故，古巨基练就了</a></p>
+
+                                   <p class="content thir f-toe f-fs1"><a href="##">情绪收放自如的功夫，没想到演...</a></p>
+                               </div>
+                               <div class="l-li f-fl">
+                                   <p class="name fir f-toe f-fs2"><a href="##">书桓走的第一天，想他</a></p>
+
+                                   <p class="content sec f-toe f-fs1"><a href="##">因为长时间诠释何书桓角色的缘故，古巨基练就了</a></p>
+
+                                   <p class="content thir f-toe f-fs1"><a href="##">情绪收放自如的功夫，没想到演...</a></p>
+                               </div>
+                               <div class="l-li f-fl f-no-mr">
+                                   <p class="name fir f-toe f-fs2"><a href="##">书桓走的第一天，想他</a></p>
+
+                                   <p class="content sec f-toe f-fs1"><a href="##">因为长时间诠释何书桓角色的缘故，古巨基练就了</a></p>
+
+                                   <p class="content thir f-toe f-fs1"><a href="##">情绪收放自如的功夫，没想到演...</a></p>
+                               </div>
+                           </div>
+                       </div>
+                    <!-- 微小说模块 end -->
+
+                    <!--微电影模块 start-->
+                    <div class="m-films f-fl">
+                        <div class="f-li f-fl"><span class="title f-toe">逗比青年的逗比之旅</span></div>
+                        <div class="f-li f-fl f-no-mr"><span class="title f-toe">逗比青年的逗比之旅</span></div>
+                        <div class="f-li f-fl"><span class="title f-toe">逗比青年的逗比之旅</span></div>
+                        <div class="f-li f-fl f-no-mr"><span class="title f-toe">逗比青年的逗比之旅</span></div>
+                    </div>
+                    <!--微电影模块 end-->
+
+                    <ul class="slider-tabs f-oh f-fl">
+                        <li class="tab-album"><div class="g-icon-wrap"><span>微相册</span></div></li>
+                        <li class="tab-novel"><div class="g-icon-wrap"><span>微小说</span></div></li>
+                        <li class="tab-film"><div class="g-icon-wrap"><span>微电影</span></div></li>
+                        <li class="z-cover"></li>
+                    </ul>
+                </div>
+
+            </section>
+            <!-- 原创平台模块 end -->
+
+            <!-- 社团动态模块 start -->
+            <section class="m-ori-news g-m-minor f-fr">
+                <h3 class="u-title"><span>社团动态</span><a class="u-t-more f-fs1" href="##">更多</a></h3>
+
+                <ul class="u-as-typeo">
+                    <volist name="clubActivity" id="v" key="k">
+                        <li class="f-cb <if condition="$k == 1">f-no-pt</if>">
+                            <div class="show">
+                                <img src="Uploads/{$v.path}" alt=""/>
+                            </div>
+                            <h5 class="m-hot-t f-fs2 f-toe">{$v.title}</h5>
+                            <a href="##" class="m-hot-c f-fs1 js-oes f-toe">{$v.introduce}</a>
+                        </li>
+                    </volist>
+                </ul>
+            </section>
+            <!-- 社团动态模块 end -->
+        </div>
+        <!-- 第三栏  end-->
+
+        <!-- 第四栏  start-->
+        <div class="g-m-wrap f-cb">
+            <!--热门种子模块 start-->
+            <section class="m-hot-seed g-m-main f-fl">
+                <h3 class="u-title"><span>热门种子</span><a class="u-t-more f-fs1" href="##">更多</a></h3>
+
+                <!-- 最热门种子 start -->
+                <div class="m-mhot-seed">
+                    <volist name="torrent" id="v" offset="1" length="3" key="k">
+                        <div class="seed-item f-fl <if condition="$k == 3">f-no-mr</if>">
+                            <a href="##"><img class="show f-fl" src="__PUBLIC__/images/content/4.jpg" alt=""/></a>
+
+                            <div class="item-desc f-fl f-oh">
+                                <h5 class="u-list-title f-fs2 f-toe">{$v.title|msubstr=0,5,'utf-8',true}</h5>
+
+                                <div class="player f-cb">
+                                    <div class="tip oh">主演:</div>
+                                    <div class="content js-oes">我们是大法官，都是不会个我靠打击风格与荣誉</div>
+                                </div>
+                                <div class="type f-cb">
+                                    <div class="tip f-oh">类型:</div>
+                                    <div class="content js-oes">我们是大法官，都是不会个我靠打击风格与荣誉</div>
+                                </div>
+                                <div class="time f-cb">
+                                    <div class="tip f-oh">上映日期:</div>
+                                    <div class="content f-toe">12-03-24</div>
+                                </div>
+                            </div>
+                        </div>
+                    </volist>
+                </div>    
+                <!-- 最热门帖子模块 end -->
+
+                <!-- 次热门种子 start -->
+                <table class="m-t-list t-seed">
+                <volist name="torrent" id="v" offset="4" length="3" key="k">
+                    <tr>
+                        <td class="movie-name f-fs2 f-toe f-ib"><a href="##">{$v.title}</a></td>
+                        <td class="movie-thea f-fs2 f-toe f-ib"><a href="##">中外影视</a></td>
+                        <td class="upload-user f-fs2 f-toe f-ib"><a href="##">梦里知几庚</a></td>
+                    </tr>
+                </volist>        
+                </table>
+                <!-- 次热门帖子模块 end -->
+            </section>
+            <!--论坛模块 end-->
+
+            <!--比赛信息模块 start-->
+            <section class="m-compet-info g-m-minor f-fr">
+                <h3 class="u-title"><span>比赛信息</span><a class="u-t-more f-fs1" href="##">更多</a></h3>
+
+                <!-- 热门比赛 start -->
+                <ul class="m-question m-lists f-pr f-cb">
+                    <volist name="match" id="v">
+                        <li class="f-toe"><a class="f-fs2" href="">{$v.title}</a></li>
+                    </volist>
+                </ul>
+                <!-- 热门问题 end -->
+            </section>
+            <!--你问我答模块 end-->
+        </div>
+        <!-- 第四栏  end-->
+
+        <!-- 第五栏  start-->
+        <div class="g-m-wrap f-cb">
+            <!-- 二手市场 start -->
+            <section class="m-sechand g-m-main f-fl">
+                <h3 class="u-title"><span>二手市场</span></h3>
+
+                <div class="g-container f-cb">
+                    <!--热点滚动模块 start-->
+                    <div class="m-slider-con f-fl" id="m-elec">
+                        <div class="u-img-con u-sli-main f-fl slideBox js-sli7">
+                            <ul class="items">
+                                 <volist name="goods" id="v" offset="0" length="3">
+                                    <li>
+                                        <a href="##" title="{$v.goods_name|msubstr=0,5,'utf-8',true}">
+                                            <img src="__PUBLIC__/images/content/1.jpg">
+                                        </a>
+                                    </li>
+                                </volist>
+                            </ul>
+                        </div>
+                        <div class="u-img-con  u-sli-minor f-fl">
+                            <div class="u-sli-list2 f-pr slideBox js-sli8">
+                                <ul class="items">
+                                    <volist name="goods" id="v" offset="3" length="3">
+                                        <li>
+                                            <a href="##" title="{$v.goods_name|msubstr=0,5,'utf-8',true}">
+                                                <img src="__PUBLIC__/images/content/3.jpg">
+                                            </a>
+                                        </li>
+                                    </volist>
+                                </ul>
+                            </div>
+                            <div class="u-sli-list3 f-pr slideBox js-sli9">
+                                <ul class="items">
+                                    <volist name="goods" id="v" offset="6" length="3">
+                                        <li>
+                                            <a href="##" title="{$v.goods_name}">
+                                                <img src="__PUBLIC__/images/content/3.jpg">
+                                            </a>
+                                        </li>
+                                    </volist>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--热点滚动模块 end-->
+
+                    <!--热点滚动模块 start-->
+                    <div class="m-slider-con f-fl" id="m-life">
+                        <div class="u-img-con u-sli-main f-fl slideBox js-sli10">
+                            <ul class="items">
+                                <volist name="goods" id="v" offset="9" length="3">
+                                    <li>
+                                        <a href="##" title="{$v.goods_name}">
+                                            <img src="__PUBLIC__/images/content/1.jpg">
+                                        </a>
+                                    </li>
+                                </volist>
+                            </ul>
+                        </div>
+                        <div class="u-img-con  u-sli-minor f-fl">
+                            <div class="u-sli-list2 f-pr slideBox js-sli11">
+                                <ul class="items">
+                                    <volist name="goods" id="v" offset="12" length="3">
+                                        <li>
+                                            <a href="##" title="{$v.goods_name}">
+                                                <img src="__PUBLIC__/images/content/1.jpg">
+                                            </a>
+                                        </li>
+                                    </volist>
+                                </ul>
+                            </div>
+                            <div class="u-sli-list3 f-pr slideBox js-sli12">
+                                <ul class="items">
+                                   <volist name="goods" id="v" offset="15" length="3">
+                                        <li>
+                                            <a href="##" title="{$v.goods_name}">
+                                                <img src="__PUBLIC__/images/content/1.jpg">
+                                            </a>
+                                        </li>
+                                   </volist>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--热点滚动模块 end-->
+
+                    <!--热点滚动模块 start-->
+                    <div class="m-slider-con f-fl" id="m-study">
+                        <div class="u-img-con u-sli-main f-fl slideBox js-sli13">
+                            <ul class="items">
+                               <volist name="goods" id="v" offset="18" length="3">
+                                    <li>
+                                        <a href="##" title="{$v.goods_name}">
+                                            <img src="__PUBLIC__/images/content/1.jpg">
+                                        </a>
+                                    </li>
+                                </volist>
+                            </ul>
+                        </div>
+                        <div class="u-img-con  u-sli-minor f-fl">
+                            <div class="u-sli-list2 f-pr slideBox js-sli14">
+                                <ul class="items">
+                                    <volist name="goods" id="v" offset="21" length="3">
+                                        <li>
+                                            <a href="##" title="{$v.goods_name}">
+                                                <img src="__PUBLIC__/images/content/1.jpg">
+                                            </a>
+                                        </li>
+                                    </volist>
+                                </ul>
+                            </div>
+                            <div class="u-sli-list3 f-pr slideBox js-sli15">
+                                <ul class="items">
+                                    <volist name="goods" id="v" offset="24" length="3">
+                                        <li>
+                                            <a href="##" title="{$v.goods_name}">
+                                                <img src="__PUBLIC__/images/content/1.jpg">
+                                            </a>
+                                        </li>
+                                    </volist>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--热点滚动模块 end-->
+
+                    <ul class="slider-tabs f-oh">
+                        <li class="tab-products"><div class="g-icon-wrap"><span>电子产品</span></div></li>
+                        <li class="tab-daily"><div class="g-icon-wrap"><span>生活用品</span></div></li>
+                        <li class="tab-learn"><div class="g-icon-wrap"><span>学习资料</span></div></li>
+                        <li class="z-cover"></li>
+                    </ul>
+                </div>
+
+            </section>
+            <!-- 二手市场 end -->
+
+            <!-- 软件推荐 start -->
+            <section class="m-hot g-m-minor f-fr">
+                <h3 class="u-title"><span>软件推荐</span><a class="u-t-more f-fs1" href="##">更多</a></h3>
+
+                <ul class="u-as-typeo">
+                    <volist name="softwares" id="v" key="k">
+                        <li class="f-cb <if condition="$k == 1">f-no-pt</if>">
+                            <div class="show">
+                                <a href="{$v.link}">
+                                    <img src="Uploads/{$v.pic_filename}">
+                                </a>
+                            </div>
+                            <h5 class="soft-t f-fs2 f-toe">{$v.z_title}</h5>
+                            <a href="##" class="soft-c f-fs1 f-toe">快来留下你大学的第一张笑脸吧快来留下你大学的第一张笑脸吧快来留下你大学的第一张笑脸吧快来留下你大学的第一张笑脸吧快来留下你大学的第一张笑脸吧快来留下你大学的第一张笑脸吧快来留下你大学的第一张笑脸吧</a>
+                        </li>
+                    </volist>
+                </ul>
+            </section>
+            <!-- 软件推荐 end -->
+        </div>
+        <!-- 第五栏  end-->
+
+        <!-- 第六栏  start-->
+        <div class="g-m-wrap f-cb">
+            <!-- 兼职招聘 start -->
+            <section class="m-recruits g-m-main f-fl">
+                <h3 class="u-title"><span>兼职招聘</span><a class="u-t-more f-fs1" href="##">更多</a></h3>
+
+                <table class="m-t-list t-recruit">
+                    <volist name="jobs" id="v">
+                        <tr>
+                            <td class="com-name f-fs2 f-toe f-ib"><a href="##">{$v.job_company}</a></td>
+                            <td class="recruit-time f-fs2 f-toe f-ib"><a href="##">{$v.job_post_date}</a></td>
+                            <td class="recruit-location f-fs2 f-toe f-ib"><a href="##">{$v.job_address}</a></td>
+                        </tr>
+                    </volist>
+                </table>
+            </section>
+            <!-- 兼职招聘 end -->
+
+            <!--app推荐模块 start-->
+            <section class="m-app-show g-m-minor f-fr">
+                <h3 class="u-title"><span>APP推荐</span><a class="u-t-more f-fs1" href="##">更多</a></h3>
+
+                <!-- app列表 start -->
+                 <ul class="app-recon f-pr f-cb">
+                    <li class="f-fl">
+                        <a href="##"><img src="__PUBLIC__/images/content/5.png" alt="" class="show"/></a>
+                        <p class="f-fs1">重邮小帮手</p>
+                    </li>
+                    <li class="f-fl">
+                        <a href="http://202.202.43.205/opus/detail/id/2"><img src="Uploads/apps/library.jpg" class="show"/></a>
+                        <p class="f-fs1">掌上图书馆</p>
+                    </li>
+                    <li class="f-fl f-no-mr">
+                        <a href="##"><img src="__PUBLIC__/images/content/5.png" alt="" class="show"/></a>
+                        <p class="f-fs1">掌上重邮</p>
+                    </li>
+                </ul>
+                <!-- app列表 end -->
+            </section>
+            <!--app推荐模块 end-->
+        </div>
+        <!-- 第六栏  end-->
+
+        <!-- 第七栏  start-->
+        <div class="g-m-wrap f-cb">
+            <!-- 讲座信息 start -->
+            <section class="m-chairs g-m-main f-fl">
+                <h3 class="u-title"><span>讲座信息</span><a class="u-t-more f-fs1" href="##">更多</a></h3>
+
+                <!-- 讲座 start -->
+                <div class="m-mhot-chairs f-cb">
+                     <volist name="lectures" id="v" offset="0" length="3" key="k">
+                        <div class="chair-item f-fl <if condition="$k == 3">f-no-mr</if>">
+                            <img class="show f-fl" src="{$v.l_thumb_src}" width="90" height="135">
+                            <div class="item-desc f-fl f-oh">
+                                <h5 class="u-list-title f-fs2">{$v.l_title}</h5>
+                                <div class="player f-cb">
+                                    <span class="tip f-oh">主讲人:</span>
+                                    <span class="content js-oes">{$v.l_teacher}</span>
+                                </div>
+                                <div class="time f-cb">
+                                    <span class="tip f-oh">时间:</span>
+                                    <span class="content f-toe">2{$v.l_date}</span>
+                                </div>
+                                <div class="location f-cb">
+                                    <span class="tip f-oh">地点:</span>
+                                    <span class="content f-toe">{$v.l_address}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </volist>
+                </div>
+
+                <table class="m-t-list t-chairs">
+                    <tr>
+                        <th class="u-list-title f-fs2">往期回顾</th>
+                    </tr>
+
+                   <volist name="lectures" id="v" offset="3">
+                        <tr>
+                            <td class="chair-name f-fs2 f-toe f-ib"><a href="##">{$v.l_title}</a></td>
+                            <td class="chair-time f-fs2 f-toe f-ib">{$v.l_date}</td>
+                        </tr>
+                    </volist>
+                </table>
+            </section>
+            <!-- 讲座信息 end -->
+
+            <!--学习资源 start-->
+            <section class="m-m-stydy g-m-minor f-fr">
+                <h3 class="u-title"><span>学习资源</span><a class="u-t-more f-fs1" href="##">更多</a></h3>
+
+                <!-- 资源列表 start -->
+                <ul class="m-lists source-lists f-pr">
+                    <volist name="download" id="v" key="k">
+                        <li class="f-fs2">{$v.r_subject|msubstr=0,9,'utf-8',true}<a href="{$v.r_link}">下载</a></li>
+                    </volist>
+                </ul>
+                <!-- 资源列表 end -->
+            </section>
+            <!--学习资源 end-->
+        </div>
+    </main>
+    <aside class="m-module-nav" id="control-nav">
+        <div class="u-tab hot">
+            <ul class="sub">
+                <li><a href="##">热门种子</a></li>
+                <li><a href="##">专题活动</a></li>
+            </ul>
+        </div>
+        <div class="u-tab school">
+            <ul class="sub">
+                <li><a href="##">热门种子</a></li>
+                <li><a href="##">专题活动</a></li>
+            </ul>
+        </div>
+        <div class="u-tab find">
+            <ul class="sub">
+                <li><a href="##">热门种子</a></li>
+                <li><a href="##">专题活动</a></li>
+            </ul>
+        </div>
+        <div class="u-tab study-help">
+            <ul class="sub">
+                <li><a href="##">热门种子</a></li>
+                <li><a href="##">专题活动</a></li>
+            </ul>
+        </div>
+        <div class="u-tab go-top s-top-bac" id="control-top"></div>
+    </aside>
+    <footer>
+        <div class="g-wrap f-cb">
+            <div class="ft-links">
+                <a href="##" class="f-fs2 ">关于我们</a>
+                <a href="##" class="f-fs2">网站地图</a>
+                <a href="##" class="f-fs2">指出错误</a>
+                <a href="##" class="f-fs2 f-no-mr">管理入口</a>
+            </div>
+            <p class="ft-des f-fs1">地址：重庆市南岸区崇文路2号(重庆邮电大学内) 400065</p>
+            <p class="ft-des f-fs1">E-mail: redrock@cqupt.edu.cn (023-62461084)</p>
+            <ul class="ft-logolist f-cb">
+                <li class="ft-sina f-fl"></li>
+                <li class="ft-qzone f-fl"></li>
+                <li class="ft-wechat f-fl f-no-mr"></li>
+            </ul>
+        </div>
+    </footer>
+
+    <div class="g-login-wrapper" id="control-login">
+        <div class="s-bac"></div>
+        <div class="m-login-bar">
+            <div class="u-exit"></div>
+            <h5 class="login-tip">重邮通行证</h5>
+            <form action="" method="post" class="login-form">
+                <input type="text" class="user-id f-db f-fs2" placeholder="昵称、学号、教师编号、E-mail地址"/>
+                <input type="password"  class="user-pwd f-db f-fs2" placeholder="请输入通行证密码(6-16位)"/>
+                <input type="submit" value="登陆" class="confirm f-db f-fs2"/>
+            </form>
+            <a href="##" class="problem f-fs1">登录遇到问题?</a>
+        </div>
+    </div>
+</body>
+<script src="__PUBLIC__/js/lib/jquery-1.11.1.min.js"></script>
+<script src="__PUBLIC__/js/lib/jquery.dotdotdot.min.js"></script>
+<script src="__PUBLIC__/js/lib/jquery.sliderBox.js"></script>
+<script src="__PUBLIC__/js/plugin.set.js"></script>
+<script src="__PUBLIC__/js/script.js"></script>
+<script src="__PUBLIC__/js/ling.js"></script>
+
+</html>

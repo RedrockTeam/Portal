@@ -1,0 +1,46 @@
+﻿@charset "UTF-8";
+/* CSS Document */
+#sysmain{background:url('../images/4.jpg') center no-repeat;}
+#sysmain .content{width:1300px;height:700px;background:#fff;margin:20px auto;}
+#sysmain .content .syshead{height:48px;background:#3c4145;padding:10px 0 0 20px;}
+#sysmain .content .syshead div p.left{float:left;width:263px; height:44px;}
+#sysmain .content .syshead div p.right{float:right;width:200px;height:44px;line-height:44px;}
+#sysmain .content .syshead div p.right span{color:#6a7e85;margin:0px 5px;}
+#sysmain .content .syshead div p.right a{margin:0px 5px;color:#fb9d00;}
+#sysmain .content .syshead div p.right a.outsys{color:#6a7e85;}
+#sysmain .content .syshead div p.right a.outsys img{vertical-align:middle;margin-right:2px;}
+
+#sysmain .content .sysmain{height:100%;}
+#sysmain .content .sysmain .sysmenua{float:left;width:150px;height:100%;background:#30383b;/*border-left:2px solid #76af46;*/}
+#sysmain .content .sysmain .sysmenua ul li{height:48px;width:150px;}
+#sysmain .content .sysmain .sysmenua ul li a{height:48px;width:126px;border-left:4px solid #30383b;background:#30383b;color:#697d84;display:block;padding-left:20px;line-height:48px;}
+#sysmain .content .sysmain .sysmenua ul li a:hover{height:48px;width:126px;border-left:4px solid rgb(255,68,68);background:#282d31;color:rgb(255,68,68);display:block;padding-left:20px;line-height:48px;}
+#sysmain .content .sysmain .sysmenua ul li .current{border-left:4px solid rgb(255,68,68);background:#282d31;color:rgb(255,68,68);}
+
+
+
+#sysmain .content .sysmain .sysmenub{float:left;width:199px;height:100%;background:#e6e7e9;border-left:1px solid  #D1D6D9;}/*#d2d6d9 #117a9a*/
+#sysmain .content .sysmain .sysmenub p.smenubtit{color:#117a9a;width:179px;height:60px;border-bottom:1px solid #D1D6D9;font-size:20px;line-height:60px;padding-left:20px;margin-bottom:10px;}
+#sysmain .content .sysmain .sysmenub ul li{width:199px;height:36px;}
+#sysmain .content .sysmain .sysmenub ul li a{width:179px;height:36px;border-left:4px solid #e6e7e9;padding-left:16px;color:#969897;display:block;line-height:36px;}
+#sysmain .content .sysmain .sysmenub ul li a:hover{width:179px;height:36px;border-left:4px solid #107999;padding-left:16px;color:#107999;display:block;line-height:36px;background:#d2d6d9;}
+#sysmain .content .sysmain .sysmenub ul li .current{border-left:4px solid #107999;color:#107999;background:#d2d6d9;}
+
+
+#sysmain .content .sysmain .sysinfo{float:left;width:950px;height:100%;background:#fff;}
+#sysmain .content .sysmain .sysinfo .sinfotit{ background:#f4f5f6;color:#434343; height:60px;border-bottom:1px solid #D1D6D9;font-size:18px;line-height:60px;padding-left:20px;margin-bottom:10px;}
+#sysmain .content .sysmain .sysinfo .exec{height:58px;}
+#sysmain .content .sysmain .sysinfo .exec .execact{height:25px;line-height:25px;}
+#sysmain .content .sysmain .sysinfo .list{}
+
+
+
+
+.sysinfo input[type=checkbox]{ display:none;}
+#selectall{cursor:pointer;}
+img.chk{cursor:pointer;}
+.execbtn:hover{background:rgb(255,68,48);}
+
+.execck{height:16px;width:16px;padding:8px;background:url('../images/index/ck_up.gif') no-repeat;margin:0px 10px;cursor:pointer;}
+.execck:hover{background:url('../images/index/ck_down.gif') no-repeat;}
+
