@@ -28,18 +28,22 @@
 				$Goods = M('good', '' ,'DB_CONFIG1'); // 125
 				$lastGood = $Goods->find($Goods->max('goods_id')); // 最后一条数据
 				$isUpdate = time() - $lastGood['goods_save_time']; // 是否更新
-				if($isUpdate > 3600 * 24){
-					$hotGoods = R('Admin/Finder/_getHotGoods');
-					if ($hotGoods != Null) {
-						return $hotGoods;
-					}else {
+				if($isUpdate > 3600 * 3000){
+					try {
+						$hotGoods = R('Admin/Finder/_getHotGoods');
+						if ($hotGoods != Null) {
+							return $hotGoods;
+						}else {
+							return $Goods->limit($Goods->count() - 27, 27)->select(); // 从本地取出数据
+						} // 从41取出数据
+					}catch (PDOException $e){
 						return $Goods->limit($Goods->count() - 27, 27)->select(); // 从本地取出数据
-					} // 从41取出数据
+					}
 				}else {
 					return $Goods->limit($Goods->count() - 27, 27)->select(); // 从本地取出数据
 				}
 			}catch (PDOException  $e){
-				return $Goods->select();
+				return $Goods->limit($Goods->count() - 27, 27)->select();
 			}
 		}
 
