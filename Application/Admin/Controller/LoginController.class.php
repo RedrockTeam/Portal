@@ -9,7 +9,6 @@ class LoginController extends Controller {
     	
     	$this->assign('check_login',U('Admin:login/check_login'));
     	$this->assign('index',U('Admin:Finder/joblist'));
-    	
     	$this->display('login');
 	}
 		
