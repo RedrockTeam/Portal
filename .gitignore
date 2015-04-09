@@ -3,3 +3,5 @@
 Uploads
 Application/Runtime
 ThinkPHP
+.DS_Store
+Public/admin/.DS_Store
