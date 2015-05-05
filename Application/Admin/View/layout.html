@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+      <meta name="description" content="">
+      <meta name="author" content="ThemeBucket">
+      <link rel="shortcut icon" href="#" type="__PUBLIC__/adminex/image/png">
+
+      <title>后台主页</title>
+
+      <link href="__PUBLIC__/adminex/css/style.css" rel="stylesheet">
+      <link href="__PUBLIC__/adminex/css/style-responsive.css" rel="stylesheet">
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+      <![endif]-->
+    </head>
+
+    <body class="sticky-header">
+        <section>
+            <!-- side bar start -->
+            <include file="Public:sidebar" />
+            <!-- side bar end -->
+            
+            <!-- main content start-->
+            <div class="main-content" >
+    
+                <!-- header start -->
+                <include file="Public:header" />
+                <!-- header end -->
+                
+                <!-- main content start -->
+                {__CONTENT__}
+                <!-- main content end -->
+
+                <!--footer section start-->
+                <footer class="sticky-footer">
+                    2015 &copy; Excelsior By Redrock
+                </footer>
+                <!--footer section end-->
+            </div>
+            <!-- main content end-->
+            
+        </section>
+
+        <!-- Placed js at the end of the document so the pages load faster -->
+        <script src="__PUBLIC__/adminex/js/jquery-1.10.2.min.js"></script>
+        <script src="__PUBLIC__/adminex/js/jquery-ui-1.9.2.custom.min.js"></script>
+        <script src="__PUBLIC__/adminex/js/jquery-migrate-1.2.1.min.js"></script>
+        <script src="__PUBLIC__/adminex/js/bootstrap.min.js"></script>
+        <script src="__PUBLIC__/adminex/js/modernizr.min.js"></script>
+        <script src="__PUBLIC__/adminex/js/jquery.nicescroll.js"></script>
+
+
+        <!--common scripts for all pages-->
+        <script src="__PUBLIC__/adminex/js/scripts.js"></script>
+    </body>
+    
+</html>

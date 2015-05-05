@@ -63,6 +63,18 @@
 			$this->display('index');
 
 		}
+		
+		
+		/*
+		 * 
+		 */
+		public function personal(){
+			if (session('userInfo')) {
+				$this->display('personal');
+			} else {
+				$this->error("请先登录!");
+			}
+		}
 
 
 		/**

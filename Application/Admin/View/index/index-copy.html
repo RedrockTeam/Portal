@@ -1,0 +1,115 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>兼职列表</title>
+	
+	
+	
+	
+	<link rel="stylesheet" href="__PUBLIC__/admin/css/clear.css">
+	<link rel="stylesheet" href="__PUBLIC__/admin/css/adminIndex.css">
+	<link rel="stylesheet" href="__PUBLIC__/admin/css/edit.css">
+	<script src="javascript/jquery-1.8.3.min.js"></script>
+</head>
+<body id="sysmain">
+	<div class="content">
+		<div class="syshead">
+			<div class="clearfix">
+				<p class="left">
+					<img alt="红岩网校门户后台" title="红岩网校门户后台" src="__PUBLIC__/admin/images/logo.gif">
+				</p>
+				<p class="right">
+					<if condition="$Think.session.login_name neq ''">
+						<a href="javascript:void(0);">{$_SESSION['login_name']}</a>
+						<a class="outsys" title="退出系统" href="__MODULE__/Login/logout">
+							<img src="__PUBLIC__/admin/images/outsys.gif" width="16" height="16">退出
+						</a>
+					</if>
+				</p>
+			</div>
+		</div>
+		<div class="sysmain clearfix">
+			<div class="sysmenua">
+				<ul>
+					<li><a href="javascript:void(0);">后台首页</a></li>
+					<li><a href="__MODULE__/Finder/joblist">兼职信息</a></li>
+					<li><a href="__MODULE__/Study/lecturelist">讲座信息</a></li>
+					<li><a href="javascript:void(0);">下载资源</a></li>
+					<li><a <if condition="$database eq 'hot_activity'">class="current"</if> href="__CONTROLLER__/index/to/hot_activity">热门活动</a></li>
+					<li><a <if condition="$database eq 'club_activity'">class="current"</if> href="__CONTROLLER__/index/to/club_activity">社团活动</a></li>
+					<li><a href="__CONTROLLER__/upload_redrock_img">首页轮播</a></li>
+					<li><a <if condition="$database eq 'match_imformation'">class="current"</if> href="__CONTROLLER__/index/to/match_imformation">比赛信息</a></li>
+					<li><a <if condition="$database eq 'creative_platform'">class="current"</if> href="__CONTROLLER__/index/to/creative_platform">原创平台</a></li>
+				</ul>
+			</div>
+			<div class="sysmenub">
+				<p class="smenubtit">
+					<?php
+						switch($database){
+							case "match_imformation":
+								echo '比赛信息';
+								break;
+							case "hot_activity":
+								echo '热门活动';
+								break;
+							case "club_activity":
+								echo '社团活动';
+								break;
+							case 'creative_platform':
+								echo "原创平台";
+								break;
+						}
+					?>
+				</p>
+				<ul>
+					<li><a class="current" href="javascript:void(0);">查看全部</a></li>
+					<li><a href="<?php echo U("common/edit_show?edit_id=-1&table=".$database); ?>">添加信息</a></li>
+				</ul>
+			</div>
+			<div class="sysinfo">
+				<p class="sinfotit">全部信息</p>
+				<div id="list">
+					<div class="form-inline definewidth m20" >  
+					</div>
+					<table class="table table-bordered table-hover definewidth m10" >
+						
+						<tr >
+							<th>名称</th>
+							<th>简介</th>	
+							<th>发布时间</th>
+							<th style="width:80px">操作</th>
+							
+						</tr>
+						
+						<volist id="vo" name="list">
+							 <tr>
+							   <td><span>{$vo['title']|msubstr=0,9,'utf-8',true}</span></td>
+								<td>
+									<php>
+										if($database=="creative_platform"){
+									</php>
+										<span style="margin-right:10px;font-weight:bold;color:blue;">(类型:{$vo['detil']|msubstr=0,20,'utf-8',true})</span>
+									<php>
+										}
+									</php>
+									{$vo['introduce']|msubstr=0,40,'utf-8',true}
+
+								</td>
+								<td>{$vo.time|date="Y-m-d",###}</td>
+								<td style="text-align:center;">
+									  <a href="<?php echo U("common/edit_show?edit_id=".$vo['id']."&table=".$database); ?>"><font color="blue">编辑</font></a>   
+									  <a href="<?php echo U("common/delete?id=".$vo['id']."&table=".$database); ?>"><font color="blue">删除</font></a> 
+								</td>
+							</tr>
+						</volist>
+					  </table>
+					<div class="inline pull-right page" style="font-size:20px;">{$page}</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html> -->

@@ -1,92 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>兼职列表</title>
-	<link rel="stylesheet" href="__PUBLIC__/admin/css/clear.css">
-	<link rel="stylesheet" href="__PUBLIC__/admin/css/adminIndex.css">
-	<link rel="stylesheet" href="__PUBLIC__/admin/css/edit.css">
-	<link rel="stylesheet" href="__PUBLIC__/css/page.css">
-	<script src="javascript/jquery-1.8.3.min.js"></script>
-</head>
-<body id="sysmain">
-	<div class="content">
-		<div class="syshead">
-			<div class="clearfix">
-				<p class="left">
-					<img alt="红岩网校门户后台" title="红岩网校门户后台" src="__PUBLIC__/admin/images/logo.gif">
-				</p>
-				<p class="right">
-				<if condition="$Think.session.login_name">
-						<a href="javascript:void(0);">{$_SESSION.login_name}</a>
-						<a class="outsys" title="退出系统" href="__MODULE__/Login/logout">
-							<img src="__PUBLIC__/admin/images/outsys.gif" width="16" height="16">退出
-						</a>
-					</if>
-				</p>
-			</div>
-		</div>
-		<div class="sysmain clearfix">
-			<div class="sysmenua">
-				<ul>
-					<li><a href="javascript:void(0);">后台首页</a></li>
-					<li><a class="current" href="javascript:void(0);">兼职信息</a></li>
-					<li><a href="__MODULE__/Study/lecturelist">讲座信息</a></li>
-					<li><a href="javascript:void(0);">下载资源</a></li>
-					<li><a href="__MODULE__/common/index/to/hot_activity">热门活动</a></li>
-					<li><a href="__MODULE__/common/index/to/club_activity">社团活动</a></li>
-					<li><a href="__MODULE__/common/upload_redrock_img">首页轮播</a></li>
-					<li><a href="__MODULE__/common/index/to/match_imformation">比赛信息</a></li>
-					<li><a href="__MODULE__/common/index/to/creative_platform">原创平台</a></li>
-				</ul>
-			</div>
-			<div class="sysmenub">
-				<p class="smenubtit">兼职信息</p>
-				<ul>
-					<li><a class="current" href="javascript:void(0);">查看全部</a></li>
-					<li><a href="__CONTROLLER__/jobadd">添加信息</a></li>
-				</ul>
-			</div>
-			<div class="sysinfo">
-				<p class="sinfotit">全部信息</p>
-				<div id="list">
-					<table>
-						<tr>
-							<th>标题</th>
-							<th>招聘公司</th>
-							<th>工作地点</th>
-							<th>薪资</th>
-							<th>联系人</th>
-							<th>联系电话</th>
-							<th>工作时间</th>
-							<th>发布时间</th>
-							<th>更改</th>
-							<th>删除</th>
-						</tr>
-						<volist name="jobs" id="v">
-							<tr>
-								<td><a href="{$v.job_link}">{$v.job_title}</a></td>
-								<td title="{$v.job_company}">{$v.job_company|msubstr=0,6,'utf-8',true}</td>
-								<td title="{$v.job_address}">{$v.job_address|msubstr=0,6,'utf-8',true}</td>
-								<td>{$v.job_money}</td>
-								<td>{$v.job_master}</td>
-								<td>{$v.job_tel}</td>
-								<td>{$v.job_work_date}</td>
-								<td>{$v.job_post_date}</td>
-								<td><a href="__CONTROLLER__/jobUpdate/id/{$v.job_id}" style="color:rgb(17,122,154)">更改</a></td>
-								<td><a href="__CONTROLLER__/jobDel/jid/{$v.job_id}" style="color:red">删除</a></td>
-							</tr>
-						</volist>
-					</table>
-				</div>
-				<!-- <p style="text-align:center">{$page}</p> -->
-				<div id="page" style="text-align:center">
-   					<div class="jogger">{$page}</div>
-				</div>
-			</div>
-		</div>
+
+	<layout name="layout" />
+	
+	<div class="wrapper">
+		<div class="row">
+            <div class="col-md-12">
+                <!--breadcrumbs start -->
+                <ul class="breadcrumb panel">
+                    <li><a href="#"><i class="fa fa-home"></i>后台管理</a></li>
+                    <li><a href="#">兼职信息</a></li>
+                    <li class="active">所有兼职信息</li>
+                </ul>
+                <!--breadcrumbs end -->
+            </div>
+        </div>
+		<div class="row">
+            <volist name="jobs" id="v">
+    			<div class="col-md-4">
+                    <div class="panel">
+                        <div class="panel-body">
+                            <ul class="p-info">
+                                <li>
+                                    <div class="title">标题</div>
+                                    <div class="desk">{$v.job_title}</div>
+                                </li>
+                                <li>
+                                    <div class="title">招聘公司</div>
+                                    <div class="desk">{$v.job_company|msubstr=0,13,'utf-8',true}</div>
+                                </li>
+                                <li>
+                                    <div class="title">工作地点</div>
+                                    <div class="desk">{$v.job_address|msubstr=0,13,'utf-8',true}</div>
+                                </li>
+                                <li>
+                                    <div class="title">薪资</div>
+                                    <div class="desk">{$v.job_money}</div>
+                                </li>
+                                <li>
+                                    <div class="title">联系人</div>
+                                    <div class="desk">{$v.job_master}</div>
+                                </li>
+                                <li>
+                                    <div class="title">联系电话</div>
+                                    <div class="desk">{$v.job_tel}</div>
+                                </li>
+                                <li>
+                                    <div class="title">工作时间</div>
+                                    <div class="desk">{$v.job_work_date|msubstr=0,13,'utf-8',true}</div>
+                                </li>
+                                <li>
+                                    <div class="title">发布时间</div>
+                                    <div class="desk">20{$v.job_post_date|date="y-m-d", ###}</div>
+                                </li>
+                            </ul>
+                            <a href=""><button class="btn btn-success">更改</button></a>
+                            <button class="btn btn-danger pull-right">删除</button>
+                        </div>
+                    </div>
+                </div>
+            </volist>
+		</div>	
 	</div>
 
-
-</body>
-</html>
