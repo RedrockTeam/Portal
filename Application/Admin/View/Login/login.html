@@ -31,7 +31,7 @@
         <div class="login-wrap">
             <input type="text" class="form-control" name="username" id="username" placeholder="请输入你的用户名">
             <input type="password" class="form-control" name="password" id="password" placeholder="请输入你的密码">
-            <button class="btn btn-md btn-login btn-block" type="button" onclick="login()">
+            <button class="btn btn-md btn-login btn-block" type="button">
                 确认登录
             </button>
 
@@ -47,23 +47,22 @@
 <!-- Placed js at the end of the document so the pages load faster -->
 <script src="__PUBLIC__/js/jquery-1.8.1.min.js"></script>
 <script>
-$url="{$check_login}";
-$index="{$index}";
+    $url="{$check_login}";
+    $index="{$index}";
 
-function login(){
-    $username = $('#username').value;
-    $password = $('#password').value;
-
-    
-    $.ajax({
-         type: "post",
-         data: {
+    $('.login-wrap button').on('click', function () {
+            event.preventDefault();
+            $username = $('#username').value;
+            $password = $('#password').value;
+            
+            $.ajax({
+                type: "post",
+                data: {
                     username:$username,
                     password:$password
                 },
-         url: $url,
-         success: function(data){
-                
+                url: $url,
+                success: function(data){
                     if(data=="success")
                     {
                         window.location.href=$index;
@@ -71,13 +70,13 @@ function login(){
                         alert(data);
                     }
 
-         },
-         error: function(){
-          alert("验证出错了！");
-         }
-        });
-      
-}
+                },
+                error: function(){
+                    alert("验证出错了！");
+                }
+            });
+        }
+})
 </script>
 </body>
 </html>
