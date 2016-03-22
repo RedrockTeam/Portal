@@ -51,32 +51,29 @@
     $index="{$index}";
 
     $('.login-wrap button').on('click', function () {
-            event.preventDefault();
-            $username = $('#username').value;
-            $password = $('#password').value;
-            
-            $.ajax({
-                type: "post",
-                data: {
-                    username:$username,
-                    password:$password
-                },
-                url: $url,
-                success: function(data){
-                    if(data=="success")
-                    {
-                        window.location.href=$index;
-                    }else{
-                        alert(data);
-                    }
-
-                },
-                error: function(){
-                    alert("验证出错了！");
+        event.preventDefault();
+        $username = $('#username').value;
+        $password = $('#password').value;
+        
+        $.ajax({
+            type: "POST",
+            data: {
+                username: $username,
+                password: $password
+            },
+            url: $url,
+            success: function(data){
+                if (data.status === 200) {
+                    window.location.href = $index;
+                }else{
+                    alert(data);
                 }
-            });
-        }
-})
+            },
+            error: function(){
+                alert("验证出错了！");
+            }
+        });
+    });
 </script>
 </body>
 </html>
