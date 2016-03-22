@@ -11,7 +11,6 @@
 
     <link href="__PUBLIC__/adminex/css/style.css" rel="stylesheet">
     <link href="__PUBLIC__/adminex/css/style-responsive.css" rel="stylesheet">
-    <link rel="stylesheet" href="__PUBLIC__/js/jquery-1.8.1.min.js">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -46,24 +45,21 @@
 <!-- Placed js at the end of the document so the pages load faster -->
 
 <!-- Placed js at the end of the document so the pages load faster -->
-<script src="js/jquery-1.10.2.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/modernizr.min.js"></script>
+<script src="__PUBLIC__/js/jquery-1.8.1.min.js"></script>
 <script>
 $url="{$check_login}";
 $index="{$index}";
 
 function login(){
-    $username = $('#username')[0].value;
-    $password = $('#password')[0].value;
-    $verify = $('#verify')[0].value;
+    $username = $('#username').value;
+    $password = $('#password').value;
+
     
     $.ajax({
          type: "post",
          data: {
                     username:$username,
-                    password:$password,
-                    verify:$verify,
+                    password:$password
                 },
          url: $url,
          success: function(data){
