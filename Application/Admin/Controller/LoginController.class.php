@@ -11,19 +11,6 @@ class LoginController extends Controller {
     	$this->assign('index', U('Admin:Finder/joblist'));
     	$this->display('login');
 	}
-		
-	public function verify() {
-		$config = array(
-			'fontSize' => 15, // 验证码字体大小
-			'length' => 4, // 验证码位数
-			//'imageH' => 60,
-			//'imageW' => 200,
-		);
-		 
-		$Verify = new \Think\Verify($config);
-		$Verify->entry();
-	}
-		
 	
 	public function check_login(){
 		$username = I('post.username');
