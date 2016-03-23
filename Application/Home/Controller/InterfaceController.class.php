@@ -87,7 +87,7 @@ class InterfaceController extends Controller {
 		$table = "pre_portal_article_title";
 		$where['catid'] = $catid;
 		
-		$data = $this->common_interface($table,$num,$array,$config,"aid","asc","select",$where);
+		$data = $this->common_interface($table,$num,$array,$config,"aid","desc","select",$where);
 		Return ($data);
 	}
 	

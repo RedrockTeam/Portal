@@ -27,11 +27,8 @@
 
 		public function jobList(){
 			if (empty($_SESSION['login_name'])) {
-        		$this->redirect('login/login');
-        	}
-			if (empty($_SESSION['login_name'])) {
-        		$this->redirect('login/login');
-        	}
+      		$this->redirect('login/login');
+      	}
 			$Job = M('job', '', 'DB_CONFIG1');
 			$count = $Job->count();// 查询满足要求的总记录数
 			$Page = new \Think\Page($count, 6);// 实例化分页类 传入总记录数和每页显示的记录数(25)

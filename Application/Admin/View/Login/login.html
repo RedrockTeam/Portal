@@ -52,8 +52,8 @@
 
     $('.login-wrap button').on('click', function () {
         event.preventDefault();
-        $username = $('#username').value;
-        $password = $('#password').value;
+        $username = $('#username').val();
+        $password = $('#password').val();
         
         $.ajax({
             type: "POST",
