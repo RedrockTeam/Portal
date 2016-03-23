@@ -46,6 +46,32 @@
 					'goods_src' => 'images/market/3.png'
 				),
 				array(
+					'goods_name' => 'ipad mini一代转卖',
+					'goods_src' => 'images/market/1.png'
+				),
+				array(
+					'goods_name' => '三星笔记本低价出售',
+					'goods_src' => 'images/market/2.png'
+				),
+				array(
+					'goods_name' => 'iphone5 出售',
+					'goods_src' => 'images/market/3.png'
+				),
+				array(
+					'goods_name' => 'ipad mini一代转卖',
+					'goods_src' => 'images/market/1.png'
+				),
+				array(
+					'goods_name' => '三星笔记本低价出售',
+					'goods_src' => 'images/market/2.png'
+				),
+				array(
+					'goods_name' => 'iphone5 出售',
+					'goods_src' => 'images/market/3.png'
+				),
+
+
+				array(
 					'goods_name' => 'hello kitty水杯出售',
 					'goods_src' => 'images/market/4.png'
 				),
@@ -56,6 +82,56 @@
 				array(
 					'goods_name' => '吉他配品',
 					'goods_src' => 'images/market/6.png'
+				),
+				array(
+					'goods_name' => 'hello kitty水杯出售',
+					'goods_src' => 'images/market/4.png'
+				),
+				array(
+					'goods_name' => '晨光彩绘笔整盒出售',
+					'goods_src' => 'images/market/5.png'
+				),
+				array(
+					'goods_name' => '吉他配品',
+					'goods_src' => 'images/market/6.png'
+				),
+				array(
+					'goods_name' => 'hello kitty水杯出售',
+					'goods_src' => 'images/market/4.png'
+				),
+				array(
+					'goods_name' => '晨光彩绘笔整盒出售',
+					'goods_src' => 'images/market/5.png'
+				),
+				array(
+					'goods_name' => '吉他配品',
+					'goods_src' => 'images/market/6.png'
+				),
+
+
+				array(
+					'goods_name' => '森马女装秋季新款',
+					'goods_src' => 'images/market/7.png'
+				),
+				array(
+					'goods_name' => '浙江产秋冬品牌高级棉袜',
+					'goods_src' => 'images/market/8.png'
+				),
+				array(
+					'goods_name' => '西装 女 34号 9.5成新',
+					'goods_src' => 'images/market/9.png'
+				),
+				array(
+					'goods_name' => '森马女装秋季新款',
+					'goods_src' => 'images/market/7.png'
+				),
+				array(
+					'goods_name' => '浙江产秋冬品牌高级棉袜',
+					'goods_src' => 'images/market/8.png'
+				),
+				array(
+					'goods_name' => '西装 女 34号 9.5成新',
+					'goods_src' => 'images/market/9.png'
 				),
 				array(
 					'goods_name' => '森马女装秋季新款',
