@@ -83,9 +83,9 @@
 					'goods_name' => '西装 女 34号 9.5成新'
 					'goods_src' => '/images/market/9.png'
 				),
-			)
+			);
 
-			$this->assign('goods', $Finder[0]);
+			$this->assign('goods', $goods);
 			$this->assign('jobs', $Finder[1]);
 			$this->assign('softwares', $Finder[2]);
 			$this->assign('lectures', $Study[0]);
